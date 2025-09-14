@@ -248,10 +248,24 @@ def create_lookup_tables(data: Optional[Dict] = None) -> tuple[Dict[int, str], D
     all_locations = get_all_locations(data)
     base_id = data["base_id"]
     
-    id_to_name = {base_id + loc["id"]: name for name, loc in all_locations.items()}
-    name_to_id = {name: base_id + loc["id"] for name, loc in all_locations.items()}
+    id_to_name = {base_id + loc["id"]: loc["name"] for loc in all_locations}
+    name_to_id = {loc["name"]: base_id + loc["id"] for loc in all_locations}
     
     return id_to_name, name_to_id
+
+def create_id_to_name_lookup_table(data: Optional[Dict] = None) -> Dict[int, str]:
+    """Create ID to name and name to ID lookup tables"""
+    
+    id_to_name, _ = create_lookup_tables()
+    
+    return id_to_name
+
+def create_name_to_id_lookup_table(data: Optional[Dict] = None) -> Dict[str, int]:
+    """Create ID to name and name to ID lookup tables"""
+    
+    _, name_to_id = create_lookup_tables()
+    
+    return name_to_id
 
 def create_region_lookup_tables(data: Optional[Dict] = None) -> tuple[Dict[int, str], Dict[str, int]]:
     """Create region ID to name and name to region ID lookup tables"""

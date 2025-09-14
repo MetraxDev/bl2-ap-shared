@@ -33,6 +33,8 @@ from .data_loader import (
     # Archipelago integration
     create_location_table_for_archipelago,
     create_lookup_tables,
+    create_id_to_name_lookup_table,
+    create_name_to_id_lookup_table,
     
     # Statistics
     get_stats,
@@ -74,6 +76,8 @@ __all__ = [
     # Archipelago
     "create_location_table_for_archipelago",
     "create_lookup_tables",
+    "create_id_to_name_lookup_table",
+    "create_name_to_id_lookup_table",
     
     # Stats
     "get_stats",

@@ -21,7 +21,7 @@
     },
     "Southern Shelf": {
       "region_id": 550,
-      "connections": ["Southern Shelf - Bay", "Three Horns - Divide"],
+      "connections": ["Windshear Waste", "Southern Shelf - Bay", "Three Horns - Divide"],
       "locations": {
         "bosses": [
           {"name": "Boom", "action": "Kill", "id": 550},
@@ -64,7 +64,7 @@
     },
     "Three Horns - Divide": {
       "region_id": 1650,
-      "connections": ["Southern Shelf", "Frostburn Canyon", "Sanctuary", "Sanctuary Hole", "Tundra Express"],
+      "connections": ["Southern Shelf", "Frostburn Canyon", "Sanctuary", "Sanctuary Hole", "Tundra Express", "Three Horns - Valley"],
       "locations": {
         "bosses": [
           {"name": "Bad Maw", "action": "Kill", "id": 1650},
