@@ -10,9 +10,9 @@ readme_path = Path(__file__).parent / "README.md"
 long_description = readme_path.read_text() if readme_path.exists() else ""
 
 setup(
-    name="bl2-archipelago-shared",
+    name="bl2-ap-shared",
     version="1.0.0",
-    author="BL2 Archipelago Team",
+    author="Metrax",
     description="Shared data and utilities for Borderlands 2 Archipelago implementation",
     long_description=long_description,
     long_description_content_type="text/markdown",
