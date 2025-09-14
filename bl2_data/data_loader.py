@@ -62,18 +62,18 @@ def get_all_locations(data: Optional[Dict] = None) -> Dict[str, Dict]:
     if data is None:
         data = load_bl2_data()
     
-    locations = {}
+    locations = []
     for region_name, region_data in data["regions"].items():
         # Access locations through the new structure: region["locations"][category]
         for category in CATEGORIES:
             if category in region_data["locations"]:
                 for item in region_data["locations"][category]:
-                    locations[item["name"]] = {
+                    locations.append({
                         **item,
                         "region": region_name,
                         "category": category,
                         "full_id": data["base_id"] + item["id"]
-                    }
+                    })
     return locations
 
 def get_region_connections(data: Optional[Dict] = None) -> Dict[str, List[str]]:
