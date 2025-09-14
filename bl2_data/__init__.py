@@ -36,7 +36,8 @@ from .data_loader import (
     
     # Statistics
     get_stats,
-    print_stats
+    print_stats,
+    print_region_summary
 )
 
 from .constants import (
@@ -77,6 +78,7 @@ __all__ = [
     # Stats
     "get_stats",
     "print_stats",
+    "print_region_summary",
     
     # Constants
     "BASE_ID",

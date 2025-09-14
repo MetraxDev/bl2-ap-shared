@@ -2,364 +2,666 @@
   "base_id": 3333000,
   "regions": {
     "Windshear Waste": {
+      "region_id": 0,
       "connections": ["Southern Shelf"],
-      "bosses": [
-        {"name": "Kill Knuckle Dragger", "id": 0}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Windshear Waste", "id": 100}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Knuckle Dragger", "action": "Kill", "id": 0}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Windshear Waste", "action": "Unlock", "id": 150}
+        ],
+        "red_chests": [],
+        "regions": [
+          {"name": "Windshear Waste", "action": "Discover", "id": 250}
+        ]
+      }
     },
     "Southern Shelf": {
+      "region_id": 550,
       "connections": ["Southern Shelf - Bay", "Three Horns - Divide"],
-      "bosses": [
-        {"name": "Kill Boom", "id": 1},
-        {"name": "Kill Bewm", "id": 2},
-        {"name": "Kill Captain Flynt", "id": 9}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Southern Shelf", "id": 101}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Boom", "action": "Kill", "id": 550},
+          {"name": "Bewm", "action": "Kill", "id": 551},
+          {"name": "Captain Flynt", "action": "Kill", "id": 552}
+        ],
+        "cult_symbols": [
+          {"name": "Cult Symbol - Southern Shelf 1", "action": "Find", "id": 600},
+          {"name": "Cult Symbol - Southern Shelf 2", "action": "Find", "id": 601}
+        ],
+        "echos": [
+          {"name": "ECHO - Claptrap's Place", "action": "Find", "id": 650}
+        ],
+        "fast_travel": [
+          {"name": "Southern Shelf", "action": "Unlock", "id": 700}
+        ],
+        "red_chests": [
+          {"name": "Red Chest - Southern Shelf 1", "action": "Open", "id": 750}
+        ],
+        "regions": [
+          {"name": "Southern Shelf", "action": "Discover", "id": 800}
+        ]
+      }
     },
     "Southern Shelf - Bay": {
+      "region_id": 1100,
       "connections": ["Southern Shelf"],
-      "bosses": [
-        {"name": "Kill Midgemong", "id": 43}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Southern Shelf - Bay", "id": 102}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Midgemong", "action": "Kill", "id": 1100}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "Southern Shelf - Bay", "action": "Discover", "id": 1350}
+        ]
+      }
     },
     "Three Horns - Divide": {
+      "region_id": 1650,
       "connections": ["Southern Shelf", "Frostburn Canyon", "Sanctuary", "Sanctuary Hole", "Tundra Express"],
-      "bosses": [
-        {"name": "Kill Bad Maw", "id": 8},
-        {"name": "Kill Boll", "id": 22},
-        {"name": "Kill Savage Lee", "id": 51}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Three Horns - Divide", "id": 103}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Bad Maw", "action": "Kill", "id": 1650},
+          {"name": "Boll", "action": "Kill", "id": 1651},
+          {"name": "Savage Lee", "action": "Kill", "id": 1652}
+        ],
+        "cult_symbols": [
+          {"name": "Cult Symbol - Three Horns Divide 1", "action": "Find", "id": 1700},
+          {"name": "Cult Symbol - Three Horns Divide 2", "action": "Find", "id": 1701}
+        ],
+        "echos": [
+          {"name": "ECHO - Claptrap Rescue", "action": "Find", "id": 1750}
+        ],
+        "fast_travel": [
+          {"name": "Three Horns - Divide", "action": "Unlock", "id": 1800}
+        ],
+        "red_chests": [
+          {"name": "Red Chest - Three Horns Divide 1", "action": "Open", "id": 1850}
+        ],
+        "regions": [
+          {"name": "Three Horns - Divide", "action": "Discover", "id": 1900}
+        ]
+      }
     },
     "Three Horns - Valley": {
+      "region_id": 2200,
       "connections": ["Three Horns - Divide", "Southpaw Steam & Power", "The Fridge", "Bloodshot Stronghold", "The Dust"],
-      "bosses": [
-        {"name": "Kill Doc Mercy", "id": 25}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Three Horns - Valley", "id": 104}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Doc Mercy", "action": "Kill", "id": 2200}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Three Horns - Valley", "action": "Unlock", "id": 2350}
+        ],
+        "red_chests": [],
+        "regions": [
+          {"name": "Three Horns - Valley", "action": "Discover", "id": 2450}
+        ]
+      }
     },
     "Bloodshot Ramparts": {
+      "region_id": 2750,
       "connections": ["Bloodshot Stronghold"],
-      "bosses": [],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Bloodshot Ramparts", "id": 105}
-      ]
+      "locations": {
+        "bosses": [],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "Bloodshot Ramparts", "action": "Discover", "id": 3000}
+        ]
+      }
     },
     "Bloodshot Stronghold": {
+      "region_id": 3300,
       "connections": ["Three Horns - Valley", "Bloodshot Ramparts"],
-      "bosses": [
-        {"name": "Kill Splinter Group", "id": 58}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Bloodshot Stronghold", "id": 106}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Splinter Group", "action": "Kill", "id": 3300}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [
+          {"name": "Red Chest - Bloodshot Stronghold 1", "action": "Open", "id": 3500}
+        ],
+        "regions": [
+          {"name": "Bloodshot Stronghold", "action": "Discover", "id": 3550}
+        ]
+      }
     },
     "The Bunker": {
+      "region_id": 3850,
       "connections": ["Thousand Cuts", "Control Core Angel"],
-      "bosses": [
-        {"name": "Kill BNK3R", "id": 5}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover The Bunker", "id": 107}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "BNK3R", "action": "Kill", "id": 3850}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "The Bunker", "action": "Unlock", "id": 4000}
+        ],
+        "red_chests": [],
+        "regions": [
+          {"name": "The Bunker", "action": "Discover", "id": 4100}
+        ]
+      }
     },
     "Frostburn Canyon": {
+      "region_id": 4400,
       "connections": ["Three Horns - Divide"],
-      "bosses": [
-        {"name": "Kill Incinerator Clayton", "id": 33},
-        {"name": "Kill Scorch", "id": 52},
-        {"name": "Kill Spycho", "id": 59}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Frostburn Canyon", "id": 108}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Incinerator Clayton", "action": "Kill", "id": 4400},
+          {"name": "Scorch", "action": "Kill", "id": 4401},
+          {"name": "Spycho", "action": "Kill", "id": 4402}
+        ],
+        "cult_symbols": [
+          {"name": "Cult Symbol - Frostburn Canyon 1", "action": "Find", "id": 4450},
+          {"name": "Cult Symbol - Frostburn Canyon 2", "action": "Find", "id": 4451}
+        ],
+        "echos": [
+          {"name": "ECHO - Firehawk", "action": "Find", "id": 4500}
+        ],
+        "fast_travel": [
+          {"name": "Frostburn Canyon", "action": "Unlock", "id": 4550}
+        ],
+        "red_chests": [
+          {"name": "Red Chest - Frostburn Canyon 1", "action": "Open", "id": 4600}
+        ],
+        "regions": [
+          {"name": "Frostburn Canyon", "action": "Discover", "id": 4650}
+        ]
+      }
     },
     "Southpaw Steam & Power": {
+      "region_id": 4950,
       "connections": ["Three Horns - Valley"],
-      "bosses": [
-        {"name": "Kill Assassin Oney", "id": 15},
-        {"name": "Kill Assassin Reeth", "id": 16},
-        {"name": "Kill Assassin Rouf", "id": 17},
-        {"name": "Kill Assassin Wot", "id": 18}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Southpaw Steam & Power", "id": 109}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Assassin Oney", "action": "Kill", "id": 4950},
+          {"name": "Assassin Reeth", "action": "Kill", "id": 4951},
+          {"name": "Assassin Rouf", "action": "Kill", "id": 4952},
+          {"name": "Assassin Wot", "action": "Kill", "id": 4953}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "Southpaw Steam & Power", "action": "Discover", "id": 5200}
+        ]
+      }
     },
     "The Dust": {
+      "region_id": 5500,
       "connections": ["Three Horns - Valley", "Friendship Gulag", "Eridium Blight", "Lynchwood", "The Highlands"],
-      "bosses": [
-        {"name": "Kill The Black Queen", "id": 20},
-        {"name": "Kill Gettle", "id": 30},
-        {"name": "Kill Mal", "id": 40},
-        {"name": "Kill McNally", "id": 41},
-        {"name": "Kill Mick Zaford", "id": 42},
-        {"name": "Kill Mobley", "id": 44},
-        {"name": "Kill Tector & Jimbo Hodunk", "id": 60}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover The Dust", "id": 110}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "The Black Queen", "action": "Kill", "id": 5500},
+          {"name": "Gettle", "action": "Kill", "id": 5501},
+          {"name": "Mal", "action": "Kill", "id": 5502},
+          {"name": "McNally", "action": "Kill", "id": 5503},
+          {"name": "Mick Zaford", "action": "Kill", "id": 5504},
+          {"name": "Mobley", "action": "Kill", "id": 5505},
+          {"name": "Tector & Jimbo Hodunk", "action": "Kill", "id": 5506}
+        ],
+        "cult_symbols": [
+          {"name": "Cult Symbol - The Dust 1", "action": "Find", "id": 5550},
+          {"name": "Cult Symbol - The Dust 2", "action": "Find", "id": 5551},
+          {"name": "Cult Symbol - The Dust 3", "action": "Find", "id": 5552}
+        ],
+        "echos": [
+          {"name": "ECHO - Hodunk Speedway", "action": "Find", "id": 5600},
+          {"name": "ECHO - Zaford Territory", "action": "Find", "id": 5601}
+        ],
+        "fast_travel": [
+          {"name": "The Dust", "action": "Unlock", "id": 5650}
+        ],
+        "red_chests": [
+          {"name": "Red Chest - The Dust 1", "action": "Open", "id": 5700},
+          {"name": "Red Chest - The Dust 2", "action": "Open", "id": 5701}
+        ],
+        "regions": [
+          {"name": "The Dust", "action": "Discover", "id": 5750}
+        ]
+      }
     },
     "Tundra Express": {
+      "region_id": 6050,
       "connections": ["Three Horns - Divide", "End of the Line"],
-      "bosses": [
-        {"name": "Kill Madame Von Bartlesby", "id": 37}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Tundra Express", "id": 111}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Madame Von Bartlesby", "action": "Kill", "id": 6050}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Tundra Express", "action": "Unlock", "id": 6200}
+        ],
+        "red_chests": [],
+        "regions": [
+          {"name": "Tundra Express", "action": "Discover", "id": 6300}
+        ]
+      }
     },
     "The Fridge": {
+      "region_id": 6600,
       "connections": ["Three Horns - Valley", "The Highlands - Outwash"],
-      "bosses": [
-        {"name": "Kill Bagman", "id": 19},
-        {"name": "Kill Flinter", "id": 28},
-        {"name": "Kill Laney White", "id": 36},
-        {"name": "Kill Muscles", "id": 45},
-        {"name": "Kill Rakkman", "id": 49},
-        {"name": "Kill Shorty", "id": 54},
-        {"name": "Kill Smash Head", "id": 56}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover The Fridge", "id": 112}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Bagman", "action": "Kill", "id": 6600},
+          {"name": "Flinter", "action": "Kill", "id": 6601},
+          {"name": "Laney White", "action": "Kill", "id": 6602},
+          {"name": "Muscles", "action": "Kill", "id": 6603},
+          {"name": "Rakkman", "action": "Kill", "id": 6604},
+          {"name": "Shorty", "action": "Kill", "id": 6605},
+          {"name": "Smash Head", "action": "Kill", "id": 6606}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "The Fridge", "action": "Unlock", "id": 6750}
+        ],
+        "red_chests": [
+          {"name": "Red Chest - The Fridge 1", "action": "Open", "id": 6800}
+        ],
+        "regions": [
+          {"name": "The Fridge", "action": "Discover", "id": 6850}
+        ]
+      }
     },
     "The Highlands": {
+      "region_id": 7150,
       "connections": ["The Highlands - Outwash", "The Dust", "The Holy Spirits", "Opportunity", "Thousand Cuts", "Wildlife Exploitation Preserve"],
-      "bosses": [],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover The Highlands", "id": 113}
-      ]
+      "locations": {
+        "bosses": [],
+        "cult_symbols": [
+          {"name": "Cult Symbol - The Highlands 1", "action": "Find", "id": 7200}
+        ],
+        "echos": [],
+        "fast_travel": [
+          {"name": "The Highlands", "action": "Unlock", "id": 7300}
+        ],
+        "red_chests": [],
+        "regions": [
+          {"name": "The Highlands", "action": "Discover", "id": 7400}
+        ]
+      }
     },
     "The Highlands - Outwash": {
+      "region_id": 7700,
       "connections": ["The Fridge", "The Highlands"],
-      "bosses": [
-        {"name": "Kill Dukino's Mom", "id": 27},
-        {"name": "Kill Henry", "id": 31},
-        {"name": "Kill Old Slappy", "id": 46}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover The Highlands - Outwash", "id": 114}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Dukino's Mom", "action": "Kill", "id": 7700},
+          {"name": "Henry", "action": "Kill", "id": 7701},
+          {"name": "Old Slappy", "action": "Kill", "id": 7702}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "The Highlands - Outwash", "action": "Discover", "id": 7950}
+        ]
+      }
     },
     "Caustic Caverns": {
+      "region_id": 8250,
       "connections": ["Sanctuary Hole"],
-      "bosses": [
-        {"name": "Kill Gluttonous Thresher", "id": 10},
-        {"name": "Kill Blue", "id": 21},
-        {"name": "Kill Sinkhole", "id": 55},
-        {"name": "Kill Vermivorous the Invincible", "id": 63}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Caustic Caverns", "id": 115}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Gluttonous Thresher", "action": "Kill", "id": 8250},
+          {"name": "Blue", "action": "Kill", "id": 8251},
+          {"name": "Sinkhole", "action": "Kill", "id": 8252},
+          {"name": "Vermivorous the Invincible", "action": "Kill", "id": 8253}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Caustic Caverns", "action": "Unlock", "id": 8400}
+        ],
+        "red_chests": [
+          {"name": "Red Chest - Caustic Caverns 1", "action": "Open", "id": 8450}
+        ],
+        "regions": [
+          {"name": "Caustic Caverns", "action": "Discover", "id": 8500}
+        ]
+      }
     },
     "Wildlife Exploitation Preserve": {
+      "region_id": 8800,
       "connections": ["The Highlands"],
-      "bosses": [
-        {"name": "Kill Bloodwing", "id": 4},
-        {"name": "Kill W4R-D3N", "id": 14},
-        {"name": "Kill Pimon", "id": 47},
-        {"name": "Kill Son of Mothrakk", "id": 57},
-        {"name": "Kill Tumbaa", "id": 62}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Wildlife Exploitation Preserve", "id": 116}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Bloodwing", "action": "Kill", "id": 8800},
+          {"name": "W4R-D3N", "action": "Kill", "id": 8801},
+          {"name": "Pimon", "action": "Kill", "id": 8802},
+          {"name": "Son of Mothrakk", "action": "Kill", "id": 8803},
+          {"name": "Tumbaa", "action": "Kill", "id": 8804}
+        ],
+        "cult_symbols": [],
+        "echos": [
+          {"name": "ECHO - Bloodwing", "action": "Find", "id": 8900}
+        ],
+        "fast_travel": [
+          {"name": "Wildlife Exploitation Preserve", "action": "Unlock", "id": 8950}
+        ],
+        "red_chests": [],
+        "regions": [
+          {"name": "Wildlife Exploitation Preserve", "action": "Discover", "id": 9050}
+        ]
+      }
     },
     "Lynchwood": {
+      "region_id": 9350,
       "connections": ["The Dust"],
-      "bosses": [
-        {"name": "Kill Deputy Winger", "id": 24},
-        {"name": "Kill Mad Mike", "id": 38},
-        {"name": "Kill Mad Dog", "id": 39},
-        {"name": "Kill Sheriff of Lynchwood", "id": 53}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Lynchwood", "id": 117}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Deputy Winger", "action": "Kill", "id": 9350},
+          {"name": "Mad Mike", "action": "Kill", "id": 9351},
+          {"name": "Mad Dog", "action": "Kill", "id": 9352},
+          {"name": "Sheriff of Lynchwood", "action": "Kill", "id": 9353}
+        ],
+        "cult_symbols": [
+          {"name": "Cult Symbol - Lynchwood 1", "action": "Find", "id": 9400}
+        ],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Lynchwood", "action": "Unlock", "id": 9500}
+        ],
+        "red_chests": [
+          {"name": "Red Chest - Lynchwood 1", "action": "Open", "id": 9550}
+        ],
+        "regions": [
+          {"name": "Lynchwood", "action": "Discover", "id": 9600}
+        ]
+      }
     },
     "Thousand Cuts": {
+      "region_id": 9900,
       "connections": ["The Highlands", "Terramorphous Peak", "The Bunker"],
-      "bosses": [],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Thousand Cuts", "id": 118}
-      ]
+      "locations": {
+        "bosses": [],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Thousand Cuts", "action": "Unlock", "id": 10050}
+        ],
+        "red_chests": [],
+        "regions": [
+          {"name": "Thousand Cuts", "action": "Discover", "id": 10150}
+        ]
+      }
     },
     "Opportunity": {
+      "region_id": 10450,
       "connections": ["The Highlands"],
-      "bosses": [
-        {"name": "Kill Jack's Body Double", "id": 11},
-        {"name": "Kill Foreman Jasper", "id": 29},
-        {"name": "Kill Jimmy Jenkins", "id": 34}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Opportunity", "id": 119}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Jack's Body Double", "action": "Kill", "id": 10450},
+          {"name": "Foreman Jasper", "action": "Kill", "id": 10451},
+          {"name": "Jimmy Jenkins", "action": "Kill", "id": 10452}
+        ],
+        "cult_symbols": [
+          {"name": "Cult Symbol - Opportunity 1", "action": "Find", "id": 10500},
+          {"name": "Cult Symbol - Opportunity 2", "action": "Find", "id": 10501}
+        ],
+        "echos": [
+          {"name": "ECHO - Opportunity", "action": "Find", "id": 10550}
+        ],
+        "fast_travel": [
+          {"name": "Opportunity", "action": "Unlock", "id": 10600}
+        ],
+        "red_chests": [
+          {"name": "Red Chest - Opportunity 1", "action": "Open", "id": 10650}
+        ],
+        "regions": [
+          {"name": "Opportunity", "action": "Discover", "id": 10700}
+        ]
+      }
     },
     "Eridium Blight": {
+      "region_id": 11000,
       "connections": ["The Dust", "Sawtooth Cauldron", "Ore Chasm", "Hero's Pass", "Arid Nexus - Boneyard"],
-      "bosses": [
-        {"name": "Kill Donkey Mong", "id": 26},
-        {"name": "Kill King Mong", "id": 35}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Eridium Blight", "id": 120}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Donkey Mong", "action": "Kill", "id": 11000},
+          {"name": "King Mong", "action": "Kill", "id": 11001}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Eridium Blight", "action": "Unlock", "id": 11150}
+        ],
+        "red_chests": [],
+        "regions": [
+          {"name": "Eridium Blight", "action": "Discover", "id": 11250}
+        ]
+      }
     },
     "Sawtooth Cauldron": {
+      "region_id": 11550,
       "connections": ["Eridium Blight"],
-      "bosses": [
-        {"name": "Kill Mortar", "id": 12},
-        {"name": "Kill Requisition Officer", "id": 50}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Sawtooth Cauldron", "id": 121}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Mortar", "action": "Kill", "id": 11550},
+          {"name": "Requisition Officer", "action": "Kill", "id": 11551}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Sawtooth Cauldron", "action": "Unlock", "id": 11700}
+        ],
+        "red_chests": [
+          {"name": "Red Chest - Sawtooth Cauldron 1", "action": "Open", "id": 11750}
+        ],
+        "regions": [
+          {"name": "Sawtooth Cauldron", "action": "Discover", "id": 11800}
+        ]
+      }
     },
     "Arid Nexus - Boneyard": {
+      "region_id": 12100,
       "connections": ["Eridium Blight", "Arid Nexus - Badlands"],
-      "bosses": [
-        {"name": "Kill Saturn", "id": 13},
-        {"name": "Kill Bone Head 2.0", "id": 23},
-        {"name": "Kill Hunter Hellquist", "id": 32}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Arid Nexus - Boneyard", "id": 122}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Saturn", "action": "Kill", "id": 12100},
+          {"name": "Bone Head 2.0", "action": "Kill", "id": 12101},
+          {"name": "Hunter Hellquist", "action": "Kill", "id": 12102}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Arid Nexus - Boneyard", "action": "Unlock", "id": 12250}
+        ],
+        "red_chests": [],
+        "regions": [
+          {"name": "Arid Nexus - Boneyard", "action": "Discover", "id": 12350}
+        ]
+      }
     },
     "Arid Nexus - Badlands": {
+      "region_id": 12650,
       "connections": ["Arid Nexus - Boneyard"],
-      "bosses": [
-        {"name": "Kill Prospector Zeke", "id": 48}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Arid Nexus - Badlands", "id": 123}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Prospector Zeke", "action": "Kill", "id": 12650}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "Arid Nexus - Badlands", "action": "Discover", "id": 12900}
+        ]
+      }
     },
     "Control Core Angel": {
+      "region_id": 13200,
       "connections": ["The Bunker"],
-      "bosses": [],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Control Core Angel", "id": 124}
-      ]
+      "locations": {
+        "bosses": [],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "Control Core Angel", "action": "Discover", "id": 13450}
+        ]
+      }
     },
     "End of the Line": {
+      "region_id": 13750,
       "connections": ["Tundra Express"],
-      "bosses": [
-        {"name": "Kill Wilhelm", "id": 7}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover End of the Line", "id": 125}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Wilhelm", "action": "Kill", "id": 13750}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "End of the Line", "action": "Discover", "id": 14000}
+        ]
+      }
     },
     "Hero's Pass": {
+      "region_id": 14300,
       "connections": ["Eridium Blight", "Vault of the Warrior"],
-      "bosses": [],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Hero's Pass", "id": 126}
-      ]
+      "locations": {
+        "bosses": [],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "Hero's Pass", "action": "Discover", "id": 14550}
+        ]
+      }
     },
     "The Holy Spirits": {
+      "region_id": 14850,
       "connections": ["The Highlands"],
-      "bosses": [],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover The Holy Spirits", "id": 127}
-      ]
+      "locations": {
+        "bosses": [],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "The Holy Spirits", "action": "Discover", "id": 15100}
+        ]
+      }
     },
     "Ore Chasm": {
+      "region_id": 15400,
       "connections": ["Eridium Blight"],
-      "bosses": [],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Ore Chasm", "id": 128}
-      ]
+      "locations": {
+        "bosses": [],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "Ore Chasm", "action": "Discover", "id": 15650}
+        ]
+      }
     },
     "Sanctuary": {
+      "region_id": 15950,
       "connections": ["Three Horns - Divide"],
-      "bosses": [],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Sanctuary", "id": 129}
-      ]
+      "locations": {
+        "bosses": [],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Sanctuary", "action": "Unlock", "id": 16100}
+        ],
+        "red_chests": [],
+        "regions": [
+          {"name": "Sanctuary", "action": "Discover", "id": 16200}
+        ]
+      }
     },
     "Sanctuary Hole": {
+      "region_id": 16500,
       "connections": ["Three Horns - Divide", "Caustic Caverns"],
-      "bosses": [],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Sanctuary Hole", "id": 130}
-      ]
+      "locations": {
+        "bosses": [],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "Sanctuary Hole", "action": "Discover", "id": 16750}
+        ]
+      }
     },
     "Terramorphous Peak": {
+      "region_id": 17050,
       "connections": ["Thousand Cuts"],
-      "bosses": [
-        {"name": "Kill Terramorphous the Invincible", "id": 61}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Terramorphous Peak", "id": 131}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "Terramorphous the Invincible", "action": "Kill", "id": 17050}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Terramorphous Peak", "action": "Unlock", "id": 17200}
+        ],
+        "red_chests": [],
+        "regions": [
+          {"name": "Terramorphous Peak", "action": "Discover", "id": 17300}
+        ]
+      }
     },
     "Vault of the Warrior": {
+      "region_id": 17600,
       "connections": ["Hero's Pass"],
-      "bosses": [
-        {"name": "Kill The Warrior", "id": 3},
-        {"name": "Kill Handsome Jack", "id": 6}
-      ],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Vault of the Warrior", "id": 132}
-      ]
+      "locations": {
+        "bosses": [
+          {"name": "The Warrior", "action": "Kill", "id": 17600},
+          {"name": "Handsome Jack", "action": "Kill", "id": 17601}
+        ],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [
+          {"name": "Vault of the Warrior", "action": "Unlock", "id": 17750}
+        ],
+        "red_chests": [
+          {"name": "Red Chest - Vault of the Warrior 1", "action": "Open", "id": 17800}
+        ],
+        "regions": [
+          {"name": "Vault of the Warrior", "action": "Discover", "id": 17850}
+        ]
+      }
     },
     "Friendship Gulag": {
+      "region_id": 18150,
       "connections": ["The Dust"],
-      "bosses": [],
-      "collectibles": [],
-      "discoveries": [
-        {"name": "Discover Friendship Gulag", "id": 133}
-      ]
+      "locations": {
+        "bosses": [],
+        "cult_symbols": [],
+        "echos": [],
+        "fast_travel": [],
+        "red_chests": [],
+        "regions": [
+          {"name": "Friendship Gulag", "action": "Discover", "id": 18400}
+        ]
+      }
     }
   }
 }
