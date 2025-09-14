@@ -1,0 +1,365 @@
+{
+  "base_id": 3333000,
+  "regions": {
+    "Windshear Waste": {
+      "connections": ["Southern Shelf"],
+      "bosses": [
+        {"name": "Kill Knuckle Dragger", "id": 0}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Windshear Waste", "id": 100}
+      ]
+    },
+    "Southern Shelf": {
+      "connections": ["Southern Shelf - Bay", "Three Horns - Divide"],
+      "bosses": [
+        {"name": "Kill Boom", "id": 1},
+        {"name": "Kill Bewm", "id": 2},
+        {"name": "Kill Captain Flynt", "id": 9}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Southern Shelf", "id": 101}
+      ]
+    },
+    "Southern Shelf - Bay": {
+      "connections": ["Southern Shelf"],
+      "bosses": [
+        {"name": "Kill Midgemong", "id": 43}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Southern Shelf - Bay", "id": 102}
+      ]
+    },
+    "Three Horns - Divide": {
+      "connections": ["Southern Shelf", "Frostburn Canyon", "Sanctuary", "Sanctuary Hole", "Tundra Express"],
+      "bosses": [
+        {"name": "Kill Bad Maw", "id": 8},
+        {"name": "Kill Boll", "id": 22},
+        {"name": "Kill Savage Lee", "id": 51}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Three Horns - Divide", "id": 103}
+      ]
+    },
+    "Three Horns - Valley": {
+      "connections": ["Three Horns - Divide", "Southpaw Steam & Power", "The Fridge", "Bloodshot Stronghold", "The Dust"],
+      "bosses": [
+        {"name": "Kill Doc Mercy", "id": 25}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Three Horns - Valley", "id": 104}
+      ]
+    },
+    "Bloodshot Ramparts": {
+      "connections": ["Bloodshot Stronghold"],
+      "bosses": [],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Bloodshot Ramparts", "id": 105}
+      ]
+    },
+    "Bloodshot Stronghold": {
+      "connections": ["Three Horns - Valley", "Bloodshot Ramparts"],
+      "bosses": [
+        {"name": "Kill Splinter Group", "id": 58}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Bloodshot Stronghold", "id": 106}
+      ]
+    },
+    "The Bunker": {
+      "connections": ["Thousand Cuts", "Control Core Angel"],
+      "bosses": [
+        {"name": "Kill BNK3R", "id": 5}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover The Bunker", "id": 107}
+      ]
+    },
+    "Frostburn Canyon": {
+      "connections": ["Three Horns - Divide"],
+      "bosses": [
+        {"name": "Kill Incinerator Clayton", "id": 33},
+        {"name": "Kill Scorch", "id": 52},
+        {"name": "Kill Spycho", "id": 59}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Frostburn Canyon", "id": 108}
+      ]
+    },
+    "Southpaw Steam & Power": {
+      "connections": ["Three Horns - Valley"],
+      "bosses": [
+        {"name": "Kill Assassin Oney", "id": 15},
+        {"name": "Kill Assassin Reeth", "id": 16},
+        {"name": "Kill Assassin Rouf", "id": 17},
+        {"name": "Kill Assassin Wot", "id": 18}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Southpaw Steam & Power", "id": 109}
+      ]
+    },
+    "The Dust": {
+      "connections": ["Three Horns - Valley", "Friendship Gulag", "Eridium Blight", "Lynchwood", "The Highlands"],
+      "bosses": [
+        {"name": "Kill The Black Queen", "id": 20},
+        {"name": "Kill Gettle", "id": 30},
+        {"name": "Kill Mal", "id": 40},
+        {"name": "Kill McNally", "id": 41},
+        {"name": "Kill Mick Zaford", "id": 42},
+        {"name": "Kill Mobley", "id": 44},
+        {"name": "Kill Tector & Jimbo Hodunk", "id": 60}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover The Dust", "id": 110}
+      ]
+    },
+    "Tundra Express": {
+      "connections": ["Three Horns - Divide", "End of the Line"],
+      "bosses": [
+        {"name": "Kill Madame Von Bartlesby", "id": 37}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Tundra Express", "id": 111}
+      ]
+    },
+    "The Fridge": {
+      "connections": ["Three Horns - Valley", "The Highlands - Outwash"],
+      "bosses": [
+        {"name": "Kill Bagman", "id": 19},
+        {"name": "Kill Flinter", "id": 28},
+        {"name": "Kill Laney White", "id": 36},
+        {"name": "Kill Muscles", "id": 45},
+        {"name": "Kill Rakkman", "id": 49},
+        {"name": "Kill Shorty", "id": 54},
+        {"name": "Kill Smash Head", "id": 56}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover The Fridge", "id": 112}
+      ]
+    },
+    "The Highlands": {
+      "connections": ["The Highlands - Outwash", "The Dust", "The Holy Spirits", "Opportunity", "Thousand Cuts", "Wildlife Exploitation Preserve"],
+      "bosses": [],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover The Highlands", "id": 113}
+      ]
+    },
+    "The Highlands - Outwash": {
+      "connections": ["The Fridge", "The Highlands"],
+      "bosses": [
+        {"name": "Kill Dukino's Mom", "id": 27},
+        {"name": "Kill Henry", "id": 31},
+        {"name": "Kill Old Slappy", "id": 46}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover The Highlands - Outwash", "id": 114}
+      ]
+    },
+    "Caustic Caverns": {
+      "connections": ["Sanctuary Hole"],
+      "bosses": [
+        {"name": "Kill Gluttonous Thresher", "id": 10},
+        {"name": "Kill Blue", "id": 21},
+        {"name": "Kill Sinkhole", "id": 55},
+        {"name": "Kill Vermivorous the Invincible", "id": 63}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Caustic Caverns", "id": 115}
+      ]
+    },
+    "Wildlife Exploitation Preserve": {
+      "connections": ["The Highlands"],
+      "bosses": [
+        {"name": "Kill Bloodwing", "id": 4},
+        {"name": "Kill W4R-D3N", "id": 14},
+        {"name": "Kill Pimon", "id": 47},
+        {"name": "Kill Son of Mothrakk", "id": 57},
+        {"name": "Kill Tumbaa", "id": 62}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Wildlife Exploitation Preserve", "id": 116}
+      ]
+    },
+    "Lynchwood": {
+      "connections": ["The Dust"],
+      "bosses": [
+        {"name": "Kill Deputy Winger", "id": 24},
+        {"name": "Kill Mad Mike", "id": 38},
+        {"name": "Kill Mad Dog", "id": 39},
+        {"name": "Kill Sheriff of Lynchwood", "id": 53}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Lynchwood", "id": 117}
+      ]
+    },
+    "Thousand Cuts": {
+      "connections": ["The Highlands", "Terramorphous Peak", "The Bunker"],
+      "bosses": [],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Thousand Cuts", "id": 118}
+      ]
+    },
+    "Opportunity": {
+      "connections": ["The Highlands"],
+      "bosses": [
+        {"name": "Kill Jack's Body Double", "id": 11},
+        {"name": "Kill Foreman Jasper", "id": 29},
+        {"name": "Kill Jimmy Jenkins", "id": 34}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Opportunity", "id": 119}
+      ]
+    },
+    "Eridium Blight": {
+      "connections": ["The Dust", "Sawtooth Cauldron", "Ore Chasm", "Hero's Pass", "Arid Nexus - Boneyard"],
+      "bosses": [
+        {"name": "Kill Donkey Mong", "id": 26},
+        {"name": "Kill King Mong", "id": 35}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Eridium Blight", "id": 120}
+      ]
+    },
+    "Sawtooth Cauldron": {
+      "connections": ["Eridium Blight"],
+      "bosses": [
+        {"name": "Kill Mortar", "id": 12},
+        {"name": "Kill Requisition Officer", "id": 50}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Sawtooth Cauldron", "id": 121}
+      ]
+    },
+    "Arid Nexus - Boneyard": {
+      "connections": ["Eridium Blight", "Arid Nexus - Badlands"],
+      "bosses": [
+        {"name": "Kill Saturn", "id": 13},
+        {"name": "Kill Bone Head 2.0", "id": 23},
+        {"name": "Kill Hunter Hellquist", "id": 32}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Arid Nexus - Boneyard", "id": 122}
+      ]
+    },
+    "Arid Nexus - Badlands": {
+      "connections": ["Arid Nexus - Boneyard"],
+      "bosses": [
+        {"name": "Kill Prospector Zeke", "id": 48}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Arid Nexus - Badlands", "id": 123}
+      ]
+    },
+    "Control Core Angel": {
+      "connections": ["The Bunker"],
+      "bosses": [],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Control Core Angel", "id": 124}
+      ]
+    },
+    "End of the Line": {
+      "connections": ["Tundra Express"],
+      "bosses": [
+        {"name": "Kill Wilhelm", "id": 7}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover End of the Line", "id": 125}
+      ]
+    },
+    "Hero's Pass": {
+      "connections": ["Eridium Blight", "Vault of the Warrior"],
+      "bosses": [],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Hero's Pass", "id": 126}
+      ]
+    },
+    "The Holy Spirits": {
+      "connections": ["The Highlands"],
+      "bosses": [],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover The Holy Spirits", "id": 127}
+      ]
+    },
+    "Ore Chasm": {
+      "connections": ["Eridium Blight"],
+      "bosses": [],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Ore Chasm", "id": 128}
+      ]
+    },
+    "Sanctuary": {
+      "connections": ["Three Horns - Divide"],
+      "bosses": [],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Sanctuary", "id": 129}
+      ]
+    },
+    "Sanctuary Hole": {
+      "connections": ["Three Horns - Divide", "Caustic Caverns"],
+      "bosses": [],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Sanctuary Hole", "id": 130}
+      ]
+    },
+    "Terramorphous Peak": {
+      "connections": ["Thousand Cuts"],
+      "bosses": [
+        {"name": "Kill Terramorphous the Invincible", "id": 61}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Terramorphous Peak", "id": 131}
+      ]
+    },
+    "Vault of the Warrior": {
+      "connections": ["Hero's Pass"],
+      "bosses": [
+        {"name": "Kill The Warrior", "id": 3},
+        {"name": "Kill Handsome Jack", "id": 6}
+      ],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Vault of the Warrior", "id": 132}
+      ]
+    },
+    "Friendship Gulag": {
+      "connections": ["The Dust"],
+      "bosses": [],
+      "collectibles": [],
+      "discoveries": [
+        {"name": "Discover Friendship Gulag", "id": 133}
+      ]
+    }
+  }
+}
