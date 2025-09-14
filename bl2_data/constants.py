@@ -48,6 +48,3 @@ CATEGORY_ID_RANGES = {
 # Region spacing (550 IDs between regions: 300 used + 250 buffer)
 REGION_SPACING = 550
 REGION_BUFFER = 250
-
-# Default JSON data file path (relative to this package)
-DEFAULT_DATA_PATH = "../data/bl2_data.json"

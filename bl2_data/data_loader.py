@@ -9,34 +9,28 @@ from types import SimpleNamespace
 from typing import Dict, List, Any, Optional
 from functools import lru_cache
 from pathlib import Path
+import pkgutil
+import os
 
 from .constants import (
     BASE_ID, CATEGORIES, CATEGORY_NAMES, CATEGORY_ACTIONS, 
-    CATEGORY_ID_RANGES, REGION_SPACING, DEFAULT_DATA_PATH
+    CATEGORY_ID_RANGES, REGION_SPACING
 )
 
-# Get the package directory for relative path resolution
-PACKAGE_DIR = Path(__file__).parent
-
-def _get_data_path(json_path: Optional[str] = None) -> Path:
-    """Get the path to the JSON data file"""
-    if json_path is None:
-        return PACKAGE_DIR / DEFAULT_DATA_PATH
-    return Path(json_path)
-
 # Functional approach for data loading and processing
-@lru_cache(maxsize=1)
+# @lru_cache(maxsize=1)
 def load_bl2_data(json_path: Optional[str] = None) -> Dict[str, Any]:
     """Load raw JSON data (cached)"""
-    data_path = _get_data_path(json_path)
-    
-    with open(data_path, 'r') as f:
-        return json.load(f)
 
-@lru_cache(maxsize=1)
+    bl2_data = pkgutil.get_data(__name__, "bl2_data.json")
+    
+    return json.loads(bl2_data)
+
+# @lru_cache(maxsize=1)
 def load_as_namespace(json_path: Optional[str] = None) -> SimpleNamespace:
     """Load data as namespace for dot notation access"""
     data = load_bl2_data(json_path)
+    # print(data)
     
     def dict_to_namespace(d):
         if isinstance(d, dict):
@@ -61,7 +55,7 @@ def get_all_locations(data: Optional[Dict] = None) -> Dict[str, Dict]:
     """Get flat dictionary of all locations across all regions"""
     if data is None:
         data = load_bl2_data()
-    
+        
     locations = []
     for region_name, region_data in data["regions"].items():
         # Access locations through the new structure: region["locations"][category]
