@@ -24,6 +24,7 @@ from .data_loader import (
     get_bosses_only,
     get_discoveries_only,
     get_collectibles_only,
+    get_regions_only,
     
     # Utility functions
     get_region_names,
@@ -67,6 +68,7 @@ __all__ = [
     "get_bosses_only",
     "get_discoveries_only", 
     "get_collectibles_only",
+    "get_regions_only",
     
     # Utilities
     "get_region_names",

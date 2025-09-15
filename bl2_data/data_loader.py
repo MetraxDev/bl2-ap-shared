@@ -103,17 +103,20 @@ def get_locations_by_region(region_name: str, data: Optional[Dict] = None) -> Li
 def get_locations_by_category(category: str, data: Optional[Dict] = None) -> Dict[str, Dict]:
     """Get all locations of a specific category"""
     all_locations = get_all_locations(data)
-    return {name: loc for name, loc in all_locations.items() if loc["category"] == category}
+    return {loc["name"]: loc for loc in all_locations if loc["category"] == category}
 
 def find_location_by_name(name: str, data: Optional[Dict] = None) -> Optional[Dict]:
     """Find a location by name across all regions"""
     all_locations = get_all_locations(data)
-    return all_locations.get(name)
+    for location in all_locations:
+        if location["name"] == name:
+            return location
+    return None
 
 def find_location_by_id(location_id: int, data: Optional[Dict] = None) -> Optional[Dict]:
     """Find a location by its ID"""
     all_locations = get_all_locations(data)
-    for location in all_locations.values():
+    for location in all_locations:
         if location["id"] == location_id:
             return location
     return None
