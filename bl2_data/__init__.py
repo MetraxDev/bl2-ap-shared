@@ -40,12 +40,17 @@ from .data_loader import (
     # Statistics
     get_stats,
     print_stats,
-    print_region_summary
+    print_region_summary,
+
+    # Unlocks
+    get_unlock_names,
+    get_unlocks_by_type,
+    get_unlocks
 )
 
 from .constants import (
     BASE_ID,
-    CATEGORIES
+    REGION_CATEGORIES
 )
 
 __version__ = "1.0.0"
@@ -88,5 +93,10 @@ __all__ = [
     
     # Constants
     "BASE_ID",
-    "CATEGORIES"
+    "REGION_CATEGORIES",
+
+    # Unlocks
+    "get_unlock_names",
+    "get_unlocks_by_type",
+    "get_unlocks"
 ]

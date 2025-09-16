@@ -663,5 +663,139 @@
         ]
       }
     }
+  },
+  "unlocks": {
+    "Main Quest": {
+      "unlock_id": 20000,
+      "count": 18,
+      "type": "progression",
+      "progressive": true
+    },
+    "Skillpoint": {
+      "unlock_id": 20010,
+      "count": 100,
+      "type": "useful",
+      "progressive": false
+    },
+    "Weapon": {
+      "unlock_id": 20020,
+      "type": "filler",
+      "progressive": false
+    },
+    "Artifact": {
+      "unlock_id": 20021,
+      "type": "filler",
+      "progressive": false
+    },
+    "Classmod": {
+      "unlock_id": 20022,
+      "type": "filler",
+      "progressive": false
+    },
+    "Fast Travel - Windshear Waste": {
+      "unlock_id": 20031,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Southern Shelf": {
+      "unlock_id": 20032,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Three Horns - Divide": {
+      "unlock_id": 20033,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Three Horns - Valley": {
+      "unlock_id": 20034,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Frostburn Canyon": {
+      "unlock_id": 20035,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - The Dust": {
+      "unlock_id": 20036,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Tundra Express": {
+      "unlock_id": 20037,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - The Fridge": {
+      "unlock_id": 20038,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - The Highlands": {
+      "unlock_id": 20039,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Caustic Caverns": {
+      "unlock_id": 20040,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Wildlife Exploitation Preserve": {
+      "unlock_id": 20041,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Lynchwood": {
+      "unlock_id": 20042,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Thousand Cuts": {
+      "unlock_id": 20043,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Opportunity": {
+      "unlock_id": 20044,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Eridium Blight": {
+      "unlock_id": 20045,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Sawtooth Cauldron": {
+      "unlock_id": 20046,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Arid Nexus - Boneyard": {
+      "unlock_id": 20047,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - The Bunker": {
+      "unlock_id": 20048,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Terramorphous Peak": {
+      "unlock_id": 20049,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Vault of the Warrior": {
+      "unlock_id": 20050,
+      "type": "useful",
+      "progressive": false
+    },
+    "Fast Travel - Sanctuary": {
+      "unlock_id": 20051,
+      "type": "useful",
+      "progressive": false
+    }
   }
 }

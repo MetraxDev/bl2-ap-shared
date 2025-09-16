@@ -6,7 +6,7 @@ Constants for BL2 Archipelago implementation
 BASE_ID = 3333000
 
 # Location categories (alphabetically sorted to match JSON structure)
-CATEGORIES = [
+REGION_CATEGORIES = [
     "bosses",
     "cult_symbols",
     "echos", 
@@ -15,8 +15,14 @@ CATEGORIES = [
     "regions"
 ]
 
+UNLOCK_CATEGORIES = [
+    "filler",
+    "progression",
+    "useful"
+]
+
 # Category display names
-CATEGORY_NAMES = {
+REGION_CATEGORY_NAMES = {
     "bosses": "Boss",
     "cult_symbols": "Cult Symbol",
     "echos": "ECHO Log",
@@ -26,7 +32,7 @@ CATEGORY_NAMES = {
 }
 
 # Category actions
-CATEGORY_ACTIONS = {
+REGION_CATEGORY_ACTIONS = {
     "bosses": "Kill",
     "cult_symbols": "Find",
     "echos": "Find",
@@ -36,7 +42,7 @@ CATEGORY_ACTIONS = {
 }
 
 # ID ranges per category (50 IDs each)
-CATEGORY_ID_RANGES = {
+REGION_CATEGORY_ID_RANGES = {
     "bosses": (0, 49),
     "cult_symbols": (50, 99),
     "echos": (100, 149),

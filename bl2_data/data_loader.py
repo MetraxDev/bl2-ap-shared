@@ -13,8 +13,8 @@ import pkgutil
 import os
 
 from .constants import (
-    BASE_ID, CATEGORIES, CATEGORY_NAMES, CATEGORY_ACTIONS, 
-    CATEGORY_ID_RANGES, REGION_SPACING
+    BASE_ID, REGION_CATEGORIES, REGION_CATEGORY_NAMES, REGION_CATEGORY_ACTIONS, 
+    REGION_CATEGORY_ID_RANGES, REGION_SPACING
 )
 
 # Functional approach for data loading and processing
@@ -59,7 +59,7 @@ def get_all_locations(data: Optional[Dict] = None) -> Dict[str, Dict]:
     locations = []
     for region_name, region_data in data["regions"].items():
         # Access locations through the new structure: region["locations"][category]
-        for category in CATEGORIES:
+        for category in REGION_CATEGORIES:
             if category in region_data["locations"]:
                 for item in region_data["locations"][category]:
                     locations.append({
@@ -69,6 +69,42 @@ def get_all_locations(data: Optional[Dict] = None) -> Dict[str, Dict]:
                         "full_id": data["base_id"] + item["id"]
                     })
     return locations
+
+def get_unlock_names(data: Optional[Dict] = None) -> List[str]:
+    """Get list of all region names"""
+    if data is None:
+        data = load_bl2_data()
+    return list(data["unlocks"].keys())
+
+def get_unlocks(data: Optional[Dict] = None) -> List[Dict]:
+    """Get list of all region names"""
+    if data is None:
+        data = load_bl2_data()
+
+    unlocks = []
+    for unlock_name, unlock_data in data["unlocks"].items():
+        unlocks.append({
+            **unlock_data,
+            "name": unlock_name,
+            "full_id": data["base_id"] + unlock_data["unlock_id"]
+        })
+        
+    return unlocks
+
+def get_unlocks_by_type(type: str, data: Optional[Dict] = None) -> List[Dict]:
+    if data is None:
+        data = load_bl2_data()
+
+    unlocks = []
+    for unlock_name, unlock_data in data["unlocks"].items():
+        if unlock_data["type"] == type:
+            unlocks.append({
+                **unlock_data,
+                "name": unlock_name,
+                "full_id": data["base_id"] + unlock_data["unlock_id"]
+            })
+    
+    return unlocks
 
 def get_region_connections(data: Optional[Dict] = None) -> Dict[str, List[str]]:
     """Get Archipelago-style region connections"""
@@ -88,7 +124,7 @@ def get_locations_by_region(region_name: str, data: Optional[Dict] = None) -> Li
     locations = []
     
     # Access locations through the new structure
-    for category in CATEGORIES:
+    for category in REGION_CATEGORIES:
         if category in region_data["locations"]:
             for item in region_data["locations"][category]:
                 locations.append({
@@ -117,7 +153,7 @@ def find_location_by_id(location_id: int, data: Optional[Dict] = None) -> Option
     """Find a location by its ID"""
     all_locations = get_all_locations(data)
     for location in all_locations:
-        if location["id"] == location_id:
+        if location["full_id"] == location_id:
             return location
     return None
 
@@ -210,9 +246,9 @@ def validate_location_ids(data: Optional[Dict] = None) -> List[str]:
     for region_name, region_data in data["regions"].items():
         region_id = region_data["region_id"]
         
-        for category in CATEGORIES:
+        for category in REGION_CATEGORIES:
             if category in region_data["locations"]:
-                min_id, max_id = CATEGORY_ID_RANGES[category]
+                min_id, max_id = REGION_CATEGORY_ID_RANGES[category]
                 expected_min = region_id + min_id
                 expected_max = region_id + max_id
                 
@@ -238,7 +274,7 @@ def create_location_table_for_archipelago(data: Optional[Dict] = None) -> Dict[s
             "region": location_data["region"],
             "code": location_data["id"],
             "category": location_data["category"],
-            "action": location_data.get("action", CATEGORY_ACTIONS.get(location_data["category"], "Unknown"))
+            "action": location_data.get("action", REGION_CATEGORY_ACTIONS.get(location_data["category"], "Unknown"))
         }
     
     return location_table
@@ -295,7 +331,7 @@ def get_stats(data: Optional[Dict] = None) -> Dict[str, Any]:
     
     # Get counts for each category
     category_counts = {}
-    for category in CATEGORIES:
+    for category in REGION_CATEGORIES:
         category_locations = get_locations_by_category(category, data)
         category_counts[f"{category}_locations"] = len(category_locations)
     
@@ -313,10 +349,10 @@ def print_stats(data: Optional[Dict] = None) -> None:
     print(f"  Total Regions: {stats['total_regions']}")
     print(f"  Total Locations: {stats['total_locations']}")
     
-    for category in CATEGORIES:
+    for category in REGION_CATEGORIES:
         count_key = f"{category}_locations"
         if count_key in stats:
-            category_name = CATEGORY_NAMES.get(category, category.title())
+            category_name = REGION_CATEGORY_NAMES.get(category, category.title())
             print(f"  {category_name} Locations: {stats[count_key]}")
     
     print(f"  Base ID: {stats['base_id']}")
@@ -329,13 +365,13 @@ def print_region_summary(data: Optional[Dict] = None) -> None:
     print("Region Summary:")
     for region_name, region_data in data["regions"].items():
         region_id = region_data["region_id"]
-        total_locations = sum(len(region_data["locations"][cat]) for cat in CATEGORIES if cat in region_data["locations"])
+        total_locations = sum(len(region_data["locations"][cat]) for cat in REGION_CATEGORIES if cat in region_data["locations"])
         print(f"  {region_name} (ID: {region_id}): {total_locations} locations")
         
-        for category in CATEGORIES:
+        for category in REGION_CATEGORIES:
             if category in region_data["locations"] and region_data["locations"][category]:
                 count = len(region_data["locations"][category])
-                category_name = CATEGORY_NAMES.get(category, category.title())
+                category_name = REGION_CATEGORY_NAMES.get(category, category.title())
                 print(f"    - {category_name}: {count}")
 
 # Clear cache functions for testing/development
