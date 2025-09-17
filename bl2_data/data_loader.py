@@ -287,8 +287,8 @@ def create_lookup_tables(data: Optional[Dict] = None) -> tuple[Dict[int, str], D
     all_locations = get_all_locations(data)
     base_id = data["base_id"]
     
-    id_to_name = {base_id + loc["id"]: loc["name"] for loc in all_locations}
-    name_to_id = {loc["name"]: base_id + loc["id"] for loc in all_locations}
+    id_to_name = {base_id + loc["id"]: f'{loc["action"]} {loc["name"]}' for loc in all_locations}
+    name_to_id = {f'{loc["action"]} {loc["name"]}': base_id + loc["id"] for loc in all_locations}
     
     return id_to_name, name_to_id
 
