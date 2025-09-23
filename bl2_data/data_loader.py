@@ -77,7 +77,7 @@ def get_unlock_names(data: Optional[Dict] = None) -> List[str]:
     return list(data["unlocks"].keys())
 
 def get_unlocks(data: Optional[Dict] = None) -> List[Dict]:
-    """Get list of all region names"""
+    """Get list of all unlocks"""
     if data is None:
         data = load_bl2_data()
 
@@ -155,6 +155,14 @@ def find_location_by_id(location_id: int, data: Optional[Dict] = None) -> Option
     for location in all_locations:
         if location["full_id"] == location_id:
             return location
+    return None
+
+def find_unlock_by_id(item_id: int, data: Optional[Dict] = None) -> Optional[Dict]:
+    """Find a location by its ID"""
+    all_unlocks = get_unlocks(data)
+    for unlock in all_unlocks:
+        if unlock["full_id"] == unlock_id:
+            return unlock
     return None
 
 # Category-specific functions for all 6 categories

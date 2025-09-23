@@ -45,7 +45,9 @@ from .data_loader import (
     # Unlocks
     get_unlock_names,
     get_unlocks_by_type,
-    get_unlocks
+    get_unlocks,
+
+    find_unlock_by_id
 )
 
 from .constants import (
@@ -98,5 +100,7 @@ __all__ = [
     # Unlocks
     "get_unlock_names",
     "get_unlocks_by_type",
-    "get_unlocks"
+    "get_unlocks",
+
+    "find_unlock_by_id"
 ]
