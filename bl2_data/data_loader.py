@@ -157,7 +157,7 @@ def find_location_by_id(location_id: int, data: Optional[Dict] = None) -> Option
             return location
     return None
 
-def find_unlock_by_id(item_id: int, data: Optional[Dict] = None) -> Optional[Dict]:
+def find_unlock_by_id(unlock_id: int, data: Optional[Dict] = None) -> Optional[Dict]:
     """Find a location by its ID"""
     all_unlocks = get_unlocks(data)
     for unlock in all_unlocks:
